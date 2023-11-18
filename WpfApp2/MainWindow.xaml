@@ -1,0 +1,106 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Product" Height="450" Width="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+            
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="0"  Width="80" Height="50" VerticalAlignment="Top" Margin="10,20,101,90" >
+            <TextBlock.Background>
+                <ImageBrush ImageSource="Images/Sebeticon.png" Stretch="Fill" />
+            </TextBlock.Background>
+        </TextBlock>
+      
+
+            <TextBox Grid.Column="1"
+                     Height="20" 
+                     Width="300"
+                     Background="White" 
+                     Text="Search.."
+                     Margin="5"
+                     Name="text_search"
+                     MouseEnter="TextBox_MouseEnter"
+                     MouseLeave="text_search_MouseLeave"
+                     VerticalAlignment="Top"
+                     
+                     >
+
+
+            </TextBox>
+
+
+
+
+        
+
+
+            <Button Grid.Column="1"
+                    Content="Fanta"
+                    Click="Fanta_Click"
+                    HorizontalAlignment="Left" Margin="180,0,0,0" 
+                    Grid.Row="1" VerticalAlignment="Center" Height="98" Width="71">
+                <Button.Background>
+                    <ImageBrush ImageSource="images/cola1.jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+                
+            </Button>
+
+            <Button 
+                Grid.Column="1" Content="Sprite" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" 
+                Click="Button_Click" 
+                Height="98" Width="70">
+                
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/sprite.jpeg" Stretch="UniformToFill"/>
+                </Button.Background>
+                
+            </Button>
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+        <Button Grid.Column="1" Grid.Row="1" 
+            Width="58" Height="100" Margin="101,162,0,0"
+                Content="Coca Cola "
+                    VerticalAlignment="Top" 
+                HorizontalAlignment="Left"
+                Click="ButtonCola_Click">
+
+            <Button.Background>
+                <ImageBrush ImageSource="images/Cola2.png" Stretch="UniformToFill"/>
+            </Button.Background>
+
+
+
+
+
+
+
+
+        </Button>
+
+
+
+    </Grid>
+
+</Window>
